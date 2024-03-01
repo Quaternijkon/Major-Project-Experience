@@ -1,0 +1,18 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+ALU32 Testbench Started
+Add: in0=20000000, in1=20000000, out=40000000, CF=0, OF=0, ZF=0, PF=1, SF=0
+Addu: in0=20000000, in1=20000001, out=40000001, CF=0, OF=0, ZF=0, PF=0, SF=0
+Sub: in0=20000000, in1=20000001, out=ffffffff, CF=0, OF=0, ZF=0, PF=1, SF=1
+Subu: in0=20000000, in1=20000001, out=ffffffff, CF=1, OF=0, ZF=0, PF=1, SF=1
+And: in0=20000000, in1=20000001, out=20000000, CF=0, OF=0, ZF=0, PF=1, SF=0
+Or: in0=20000000, in1=20000001, out=20000001, CF=0, OF=0, ZF=0, PF=0, SF=0
+Xor: in0=20000000, in1=20000001, out=00000001, CF=0, OF=0, ZF=0, PF=0, SF=0
+Nor: in0=20000000, in1=20000001, out=dffffffe, CF=0, OF=0, ZF=0, PF=0, SF=1
+SLT: in0=80000000, in1=7fffffff, out=00000001, CF=0, OF=1, ZF=0, PF=0, SF=0
+SLTU: in0=80000000, in1=7fffffff, out=00000000, CF=0, OF=0, ZF=1, PF=1, SF=0
+SHL: in0=20000000, in1=00000005, out=00000000, CF=0, OF=0, ZF=1, PF=1, SF=0
+SHR: in0=a0000000, in1=00000003, out=14000000, CF=0, OF=0, ZF=0, PF=1, SF=0
+SAR: in0=a0000000, in1=00000003, out=f4000000, CF=0, OF=0, ZF=0, PF=1, SF=1
+ALU32 Testbench Finished
+$finish called at time : 140 ns : File "D:/Vivado/ALU/ALU.srcs/sim_1/new/sim.v" Line 91

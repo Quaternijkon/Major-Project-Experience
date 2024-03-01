@@ -1,0 +1,247 @@
+//    public void code() {
+//        /* 对基因进行编码 */
+//        int cnt;
+//        int sum = 0;
+//        for (int i = 0; i < geneLength; ++i) {
+//            cnt = 0;
+//            for (int j = i + 1; j < geneLength; ++j) {
+//                if (geneData[j] < geneData[i]) {
+//                    ++cnt;
+//                }
+//            }
+//            sum += cnt * factorial[geneLength - i - 1];
+//        }
+//        geneCode = sum;
+//    }
+
+    //    public void decode() {
+//        /* 将码值解码为基因 */
+//        boolean[] vis = new boolean[geneLength];
+//        int       i, j, t;
+//        geneCode--;
+//        for (i = 0; i < geneLength; ++i) {
+//            t = geneCode / factorial[geneLength - i - 1];
+//            for (j = 1; j <= geneLength; j++) {
+//                if (!vis[j]) {
+//                    if (t == 0) {
+//                        break;
+//                    }
+//                    t--;
+//                }
+//            }
+//            geneData[i] = j;
+//            vis[j]      = true;
+//            //余数
+//            geneCode %= factorial[geneLength - i - 1];
+//        }
+//    }
+//    public Chromosome(Chromosome parent1, Chromosome parent2, int start, int end) {
+//        /* 交叉交换得到的子代 */
+//        this.id = parent1.id;
+//        this.geneData = new int[geneLength];
+//
+//        boolean[] visited = new boolean[geneLength];
+//        for (int i = start; i <= end; i++) {
+//            this.geneData[i] = parent1.geneData[i];
+//            visited[parent1.geneData[i]] = true;
+//        }
+//        int target = 0;
+//        for (int i = 0; i < geneLength; i++) {
+//            while (target >= start && target <= end) {
+//                target++;
+//            }
+//            if (!visited[parent2.geneData[i]]) {
+//                this.geneData[target] = parent2.geneData[i];
+//                target++;
+//            }
+//        }
+//        calculateFitness();
+//        fitnessValueSum += this.fitnessValue;
+//        turntable[quantity] = fitnessValueSum;
+//        quantity++;
+//
+//    }
+
+//    public static void orderCrossover(Chromosome parent1, Chromosome parent2) {
+//        /*
+//         染色体交换片段
+//         Order Crossover (OX)
+//         若不控制随机数的值,有 p= 2/(geneLength)^2的概率不发生交换, 即完全保留亲本.
+//        */
+//        int     rand1, rand2;
+//        boolean isNotValidExchange;
+//        do {
+//            rand1 = random.nextInt(geneLength);
+//            rand2 = random.nextInt(geneLength - rand1) + rand1;
+//            isNotValidExchange = (rand1 == 0 && rand2 == geneLength) || (rand1 == rand2 && parent1.geneData[rand1] == parent2.geneData[rand2]);
+//        } while (isNotValidExchange);
+//
+//        System.out.println(rand1 + "+" + rand2);
+//        Chromosome child1 = new Chromosome(parent1, parent2, rand1, rand2);
+//        Chromosome child2 = new Chromosome(parent2, parent1, rand1, rand2);
+//        Main.chromosomes.add(child1);
+//        Main.chromosomes.add(child2);
+//
+//    }
+
+//    public static void initFactorial() {
+//        /* 阶乘 */
+//        factorial = new int[geneLength];
+//        for (int i = 0; i < geneLength; ++i) {
+//            if (i == 0 || i == 1) {
+//                factorial[i] = 1;
+//            } else {
+//                factorial[i] = i * factorial[i - 1];
+//            }
+//        }
+//    }
+//    public Chromosome(int i) {
+//        this.geneData = new int[geneLength];
+//        initGeneData();
+//        calculateFitness();
+//        Population.fitnessValueSum += this.fitnessValue;
+//        Population.turntable[Population.quantity] = Population.fitnessValueSum;
+//        Population.quantity++;
+//    }
+//        Chromosome.setTurntableSaved(Chromosome.getTurntable());
+//        Chromosome.setTurntable(new int[Population.NUMBER_OF_SPECIES]);
+
+//        Chromosome.setFitnessValueSumSaved(Chromosome.getFitnessValueSum());
+//        Chromosome.setFitnessValueSum(0);
+
+//        Chromosome.setQuantitySaved(Chromosome.getQuantity());
+//        Chromosome.setQuantity(0);
+//    public static int getQuantity() {
+//        return Population.quantity;
+//    }
+//
+//    public static void setQuantity(int quantity) {
+//        Population.quantity = quantity;
+//    }
+//
+//    public static void setFitnessValueSum(int fitnessValueSum) {
+//        Population.fitnessValueSum = fitnessValueSum;
+//    }
+//
+//    public static int getFitnessValueSumSaved() {
+//        return Population.fitnessValueSumSaved;
+//    }
+//
+//    public static void setFitnessValueSumSaved(int fitnessValueSumSaved) {
+//        Population.fitnessValueSumSaved = fitnessValueSumSaved;
+//    }
+//
+//
+//    public static int[] getTurntable() {
+//        return Population.turntable;
+//    }
+//
+//    public static void setTurntable(int[] turntable) {
+//        Population.turntable = turntable;
+//    }
+//
+//    public static int[] getTurntableSaved() {
+//        return Population.turntableSaved;
+//    }
+//
+//    public static void setTurntableSaved(int[] turntableSaved) {
+//        Population.turntableSaved = turntableSaved;
+//    }
+//
+//    public static int getQuantitySaved() {
+//        return Population.quantitySaved;
+//    }
+//
+//    public static void setQuantitySaved(int quantitySaved) {
+//        Population.quantitySaved = quantitySaved;
+//    }
+//    public static void initTurnTable() {
+//        /* 初始化转盘 */
+//        Population.turntable = new int[Population.NUMBER_OF_SPECIES];
+//        Population.turntableSaved = new int[Population.NUMBER_OF_SPECIES];
+//    }
+//    public static int fitness(Chromosome chromosome) {
+//        int[]   data = chromosome.geneData;
+//        int[][] dp   = new int[Row_Workpiece][Column_Machine];
+//        dp[0][0] = timeTab[0][0];
+//
+//        for (int i = 1; i < Row_Workpiece; i++) {
+//            dp[data[i]][0] = dp[data[i - 1]][0] + timeTab[data[i]][0];
+//        }
+//        for (int j = 1; j < Column_Machine; j++) {
+//            dp[data[0]][j] = dp[data[0]][j - 1] + timeTab[data[0]][j];
+//        }
+//        for (int i = 1; i < Row_Workpiece; i++) {
+//            for (int j = 1; j < Column_Machine; j++) {
+//                dp[data[i]][j] = Math.max(dp[data[i - 1]][j], dp[data[i]][j - 1]) + timeTab[data[i]][j];
+//            }
+//        }
+//        return dp[data[Row_Workpiece - 1]][Column_Machine - 1];
+//    }
+//            System.out.println(chromosomesss[winner1].getId()+" fitness"+chromosomesss[winner1].getFitnessValue()+" turntable"+Chromosome.getTurntable()[winner1]+" random"+rand1);
+//            System.out.println(chromosomesss[winner2].getId()+" fitness"+chromosomesss[winner2].getFitnessValue()+" turntable"+Chromosome.getTurntable()[winner2]+" random"+rand2);
+//            Chromosome.orderCrossover(chromosomesSaved.get(winner1), chromosomesSaved.get(winner2));
+//        for (int i=0;i<NUM_OF_CHROMOSOME; i++){
+//            System.out.print(" "+Chromosome.getTurntable()[i]+" ");
+//        }
+int rand1   = random.nextInt(Population.fitnessValueSumSaved);
+//            int rand2   = random.nextInt(Population.fitnessValueSumSaved);
+//            int winner1 = 0;
+//            int winner2 = 0;
+//
+//            /* 查找双亲 */
+//            boolean winner1Found = false;
+//            boolean winner2Found = false;
+//            while (!(winner1Found && winner2Found)) {
+//                if (!winner1Found && Population.turntableSaved[winner1] < rand1) {
+//                    winner1++;
+//                } else {
+//                    winner1Found = true;
+//                }
+//                if (!winner2Found && Population.turntableSaved[winner2] < rand2) {
+//                    winner2++;
+//                } else {
+//                    winner2Found = true;
+//                }
+//            }
+        /*重置转盘*/
+//        Population.turntableSaved = Population.turntable;
+//        Population.turntable = new int[Population.NUMBER_OF_SPECIES];
+        /*重置适值函数和*/
+//        Population.fitnessValueSumSaved = Population.fitnessValueSum;
+//        Population.fitnessValueSum = 0;
+
+        //重置种群数量
+//        Population.quantitySaved = Population.quantity;
+//        Population.quantity = 0;
+        /*父代死亡*/
+//        for (Chromosome ch : Population.chromosomesSaved) {
+//            ch = null;
+//        }
+//        Population.quantity++;
+//        Population.fitnessValueSum += this.fitnessValue;
+//        Population.fitnessValueSum += child1.fitnessValue;
+//        Population.fitnessValueSum += child2.fitnessValue;
+//        public static int quantity, quantitySaved;
+//        public static int fitnessValueSum, fitnessValueSumSaved;
+//        public static int[] turntable      = new int[NUMBER_OF_SPECIES];
+//        public static int getQuantity() {
+//        quantity = chromosomesSaved.size();
+/         return quantity;
+//        }
+    public static void variateGene(Chromosome ch) {
+        /*
+         染色体变异
+        若不控制随机数的值,有p= 1/geneLength的概论不发生变异, 即完全保留亲本.
+        */
+        int     rand1, rand2;
+        boolean isNotValidVariation;
+        do {
+            rand1 = random.nextInt(geneLength);
+            rand2 = random.nextInt(geneLength);
+            isNotValidVariation = rand1 == rand2;
+        } while (isNotValidVariation);
+
+        ch.swap(rand1, rand2);
+
+    }

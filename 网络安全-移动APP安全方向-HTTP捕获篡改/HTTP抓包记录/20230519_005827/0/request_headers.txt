@@ -1,0 +1,9 @@
+GET /users/me/account?appid=YHPEJL-8G8W3UU8PG HTTP/1.1
+Host: www.wolframalpha.com
+Accept: */*
+Connection: keep-alive
+Cookie: WR_SID=23fb200b.5fbfab0e15005
+User-Agent: WolframAlpha/2.0.9.2021042758 CFNetwork/1408.0.4 Darwin/22.5.0
+Accept-Language: zh-cn
+Authorization: OAuth oauth_consumer_key="267bd3bc591ffdaa99ff54c910f0a11a055955054", oauth_nonce="4WSW9QfVQvgTig51ipOhBtzFiraOeLyzOv79GxVA", oauth_timestamp="1684429061", oauth_signature_method="HMAC-SHA1", oauth_version="1.0", oauth_token="aee2c040-ba20-4292-a41f-a1e22663b08b", oauth_signature="auQ2vE09opumGI1i%2Bb0JJoO6sI0%3D"
+Accept-Encoding: gzip, deflate, br

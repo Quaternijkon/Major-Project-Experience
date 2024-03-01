@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="180689fs"></ZoomStartTime>
+      <ZoomEndTime time="283790fs"></ZoomEndTime>
+      <Cursor1Time time="240000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="125"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wvobject fp_name="/testbench/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/pc_in" type="array">
+      <obj_property name="ElementShortName">pc_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/pc_out" type="array">
+      <obj_property name="ElementShortName">pc_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/inst_id" type="array">
+      <obj_property name="ElementShortName">inst_id[3:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_id[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/funct3" type="array">
+      <obj_property name="ElementShortName">funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">funct3[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/funct7" type="array">
+      <obj_property name="ElementShortName">funct7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">funct7[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/reg_we" type="logic">
+      <obj_property name="ElementShortName">reg_we</obj_property>
+      <obj_property name="ObjectShortName">reg_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/reg_ra1" type="array">
+      <obj_property name="ElementShortName">reg_ra1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_ra1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/reg_ra2" type="array">
+      <obj_property name="ElementShortName">reg_ra2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_ra2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/reg_rd1" type="array">
+      <obj_property name="ElementShortName">reg_rd1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_rd1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/reg_rd2" type="array">
+      <obj_property name="ElementShortName">reg_rd2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_rd2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/reg_wa" type="array">
+      <obj_property name="ElementShortName">reg_wa[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_wa[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/reg_wd" type="array">
+      <obj_property name="ElementShortName">reg_wd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_wd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/data_ram_addr" type="array">
+      <obj_property name="ElementShortName">data_ram_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_ram_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/data_ram_wdata" type="array">
+      <obj_property name="ElementShortName">data_ram_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_ram_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/data_ram_wen" type="logic">
+      <obj_property name="ElementShortName">data_ram_wen</obj_property>
+      <obj_property name="ObjectShortName">data_ram_wen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/data_ram_rdata" type="array">
+      <obj_property name="ElementShortName">data_ram_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_ram_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/funct3" type="array">
+      <obj_property name="ElementShortName">funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">funct3[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/funct7" type="array">
+      <obj_property name="ElementShortName">funct7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">funct7[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/c1" type="logic">
+      <obj_property name="ElementShortName">c1</obj_property>
+      <obj_property name="ObjectShortName">c1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/c2" type="logic">
+      <obj_property name="ElementShortName">c2</obj_property>
+      <obj_property name="ObjectShortName">c2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/c3" type="array">
+      <obj_property name="ElementShortName">c3[1:0]</obj_property>
+      <obj_property name="ObjectShortName">c3[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/alu_op" type="array">
+      <obj_property name="ElementShortName">alu_op[2:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/branch" type="array">
+      <obj_property name="ElementShortName">branch[1:0]</obj_property>
+      <obj_property name="ObjectShortName">branch[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/dmem_we" type="logic">
+      <obj_property name="ElementShortName">dmem_we</obj_property>
+      <obj_property name="ObjectShortName">dmem_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/reg_we" type="logic">
+      <obj_property name="ElementShortName">reg_we</obj_property>
+      <obj_property name="ObjectShortName">reg_we</obj_property>
+   </wvobject>
+</wave_config>

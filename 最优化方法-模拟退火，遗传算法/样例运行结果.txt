@@ -1,0 +1,24 @@
+用例			模拟退火结果	登山算法结果(128次运行最好的结果)
+
+instance 0		7038			7038
+
+instance 1		8366			8366
+
+instance 2		7166			7166
+
+instance 3		7312			7312
+
+instance 4		8003			8003
+
+instance 5		7720			7720
+
+instance 6		1431			1451
+
+instance 7		1951			1964
+
+instance 8		1109			1111
+
+instance 9		1902			1943
+
+instance 10		3277			3284
+

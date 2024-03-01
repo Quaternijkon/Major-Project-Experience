@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>test.png</file>
+        <file>admin.png</file>
+        <file>admin_icon.png</file>
+        <file>close.png</file>
+        <file>minimize.png</file>
+        <file>minimize_thin.png</file>
+        <file>group_icon.png</file>
+        <file>icon.png</file>
+    </qresource>
+    <qresource prefix="/qss"/>
+    <qresource prefix="/new/patterns">
+        <file>patterns/1.png</file>
+        <file>patterns/2.png</file>
+        <file>patterns/3.png</file>
+        <file>patterns/4.png</file>
+        <file>patterns/5.png</file>
+        <file>patterns/6.png</file>
+        <file>patterns/7.png</file>
+        <file>patterns/8.png</file>
+        <file>patterns/9.png</file>
+        <file>patterns/10.png</file>
+        <file>patterns/11.png</file>
+        <file>patterns/12.png</file>
+        <file>patterns/13.png</file>
+        <file>patterns/14.png</file>
+        <file>patterns/15.png</file>
+        <file>patterns/16.png</file>
+        <file>patterns/17.png</file>
+        <file>patterns/18.png</file>
+        <file>patterns/0.png</file>
+    </qresource>
+</RCC>
